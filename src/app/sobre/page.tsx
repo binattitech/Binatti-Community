@@ -13,7 +13,7 @@ export default function Sobre() {
         <HeaderMegaMenu />
       </header>
       <main>
-        <Image h={600} src="/imagens/_DSC5582.jpg"/>
+        <Image h={500} src="/imagens/_DSC5582.jpg"/>
         <FeaturesGrid />
       </main>
       <footer>
