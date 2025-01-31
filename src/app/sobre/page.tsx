@@ -5,7 +5,7 @@ import { HeroImageBackground } from "@/components/hero/HeroImageBackground";
 import { UserInfoIcons } from "@/components/user/UserInfoIcons";
 import { Grid } from '@mantine/core';
 
-export default function Home() {
+export default function Sobre() {
   return (
     <div>
       <header>
