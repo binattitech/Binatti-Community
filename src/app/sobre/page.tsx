@@ -1,24 +1,23 @@
-import { FaqSimple } from "@/components/faq/FaqSimple";
+import { FeaturesGrid } from "@/components/features/FeaturesGrid";
 import { FooterCentered } from "@/components/footer/FooterCentered";
 import { HeaderMegaMenu } from "@/components/header/HeaderMegaMenu";
 import { HeroImageBackground } from "@/components/hero/HeroImageBackground";
-import { Children } from "react";
-
+import { UserInfoIcons } from "@/components/user/UserInfoIcons";
+import { Grid } from '@mantine/core';
 
 export default function Home() {
   return (
     <div>
-      <header> 
-        <HeaderMegaMenu/>
+      <header>
+        <HeaderMegaMenu />
       </header>
       <main>
         <HeroImageBackground />
-        <FaqSimple />
+        <FeaturesGrid />
       </main>
       <footer>
         <FooterCentered />
       </footer>
-
     </div>
   );
 }
