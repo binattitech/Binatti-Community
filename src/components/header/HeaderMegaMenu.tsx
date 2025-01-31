@@ -102,9 +102,9 @@ export function HeaderMegaMenu() {
           />
 
           <Group h="100%" gap={0} visibleFrom="sm">
-            <a href="#" className={classes.link}>
+            <Link href="/" className={classes.link}>
               Home
-            </a>
+            </Link>
             <HoverCard
               width={600}
               position="bottom"
@@ -158,7 +158,7 @@ export function HeaderMegaMenu() {
             <Link href="/sobre" className={classes.link}>
               Sobre Nós
             </Link>
-           
+
             <a href="#" className={classes.link}>
               Seja uma Voluntária
             </a>
