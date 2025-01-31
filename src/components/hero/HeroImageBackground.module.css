@@ -6,7 +6,7 @@
     background-size: cover;
     background-position: center;
 
-    @media (max-width: 36em) {
+    @media (c) {
         padding-top: 80px;
         padding-bottom: 50px;
     }
