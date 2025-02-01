@@ -15,25 +15,25 @@ export const metadata = {
 };
 
 const myColor: MantineColorsTuple = [
-  "#f5f1f9",
-  "#e6e0ec",
-  "#ccbdd9",
-  "#b197c7",
-  "#9b78b8",
-  "#8c64ae",
-  "#865aab",
-  "#734a96",
-  "#674186",
-  "#593776",
+  '#f3edff',
+  '#e2d8f8',
+  '#c1afec',
+  '#9e83e0',
+  '#815ed6',
+  '#6f46d0',
+  '#653ace',
+  '#552cb7',
+  '#4b27a4',
+  '#402091'
 ];
 
 const theme = createTheme({
   colors: {
     myColor,
   },
-  primaryColor: "myColor", // Define como cor primária do site
-  fontFamily: "Sora, sans-serif", // Define fonte padrão
-  defaultRadius: "sm", // Borda arredondada padrão
+  primaryColor: "myColor",
+  fontFamily: "Poppins, sans-serif",
+  defaultRadius: "sm",
 });
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

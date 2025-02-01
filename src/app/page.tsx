@@ -5,7 +5,6 @@ import { HeaderMegaMenu } from "@/components/header/HeaderMegaMenu";
 import { HeroImageBackground } from "@/components/hero/HeroImageBackground";
 import { SimpleGrid } from "@mantine/core";
 import { Container } from "@mantine/core";
-import { Children } from "react";
 
 export default function Home() {
   return (

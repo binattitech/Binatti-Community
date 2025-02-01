@@ -98,7 +98,7 @@ export function HeaderMegaMenu() {
             src="/logos/logoroxa.svg"
             alt="Binatti Logo"
             width={120}
-            height={40}
+            height={28.5}
           />
 
           <Group h="100%" gap={0} visibleFrom="sm">
@@ -211,7 +211,9 @@ export function HeaderMegaMenu() {
           <Divider my="sm" />
 
           <Group justify="center" grow pb="xl" px="md">
-            <Button variant="default">Log in</Button>
+            <Link href="/login">
+              <Button variant="default">Log in</Button>
+            </Link>
             <Button>Sign up</Button>
           </Group>
         </ScrollArea>

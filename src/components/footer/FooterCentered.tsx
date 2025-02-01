@@ -35,20 +35,20 @@ export function FooterCentered() {
           src="/logos/logoroxa.svg"
           alt="Binatti Logo"
           width={120}
-          height={40}
+          height={28.5}
         />
 
         <Group className={classes.links}>{items}</Group>
 
         <Group gap="xs" justify="flex-end" wrap="nowrap">
           <ActionIcon size="lg" variant="default" radius="xl">
-            <Linkedin size={18} strokeWidth={1.5} color="#3e9392" />
+            <Linkedin size={18} strokeWidth={1.5} color="#552cb7" />
           </ActionIcon>
           <ActionIcon size="lg" variant="default" radius="xl">
-            <Github size={18} strokeWidth={1.5} color="#3e9392" />
+            <Github size={18} strokeWidth={1.5} color="#552cb7" />
           </ActionIcon>
           <ActionIcon size="lg" variant="default" radius="xl">
-            <Instagram size={18} strokeWidth={1.5} color="#3e9392" />
+            <Instagram size={18} strokeWidth={1.5} color="#552cb7" />
           </ActionIcon>
         </Group>
       </div>
