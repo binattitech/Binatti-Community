@@ -1,4 +1,4 @@
-'use client';
+"use client";
 
 import {
   Anchor,
@@ -19,7 +19,7 @@ import { GoogleButton } from "./GoogleButton";
 import { TwitterButton } from "./TwitterButton";
 
 export function AuthenticationForm(props: PaperProps) {
-  const [type, toggle] = useToggle(["login", "register"]);
+  const [type, toggle] = useToggle(["Entrar", "Cadastre-se"]);
   const form = useForm({
     initialValues: {
       email: "",
@@ -31,16 +31,14 @@ export function AuthenticationForm(props: PaperProps) {
     validate: {
       email: (val) => (/^\S+@\S+$/.test(val) ? null : "Invalid email"),
       password: (val) =>
-        val.length <= 6
-          ? "Password should include at least 6 characters"
-          : null,
+        val.length <= 6 ? "A senha deve incluir pelo menos 6 caracteres" : null,
     },
   });
 
   return (
     <Paper radius="md" p="xl" withBorder {...props}>
       <Text size="lg" fw={500}>
-        Welcome to Mantine, {type} with
+        Bem vindo a Binatti Community, {type} com
       </Text>
 
       <Group grow mb="md" mt="md">
@@ -48,14 +46,14 @@ export function AuthenticationForm(props: PaperProps) {
         <TwitterButton radius="xl">Twitter</TwitterButton>
       </Group>
 
-      <Divider label="Or continue with email" labelPosition="center" my="lg" />
+      <Divider label="Ou continue com email" labelPosition="center" my="lg" />
 
       <form onSubmit={form.onSubmit(() => {})}>
         <Stack>
           {type === "register" && (
             <TextInput
-              label="Name"
-              placeholder="Your name"
+              label="Nome"
+              placeholder="Seu nome"
               value={form.values.name}
               onChange={(event) =>
                 form.setFieldValue("name", event.currentTarget.value)
@@ -67,33 +65,33 @@ export function AuthenticationForm(props: PaperProps) {
           <TextInput
             required
             label="Email"
-            placeholder="hello@mantine.dev"
+            placeholder="mimi@gmail.com"
             value={form.values.email}
             onChange={(event) =>
               form.setFieldValue("email", event.currentTarget.value)
             }
-            error={form.errors.email && "Invalid email"}
+            error={form.errors.email && "Email inválido"}
             radius="md"
           />
 
           <PasswordInput
             required
-            label="Password"
-            placeholder="Your password"
+            label="Senha"
+            placeholder="Sua senha"
             value={form.values.password}
             onChange={(event) =>
               form.setFieldValue("password", event.currentTarget.value)
             }
             error={
               form.errors.password &&
-              "Password should include at least 6 characters"
+              "A senha deve incluir pelo menos 6 caracteres"
             }
             radius="md"
           />
 
-          {type === "register" && (
+          {type === "Cadastre-se" && (
             <Checkbox
-              label="I accept terms and conditions"
+              label="Eu aceito os termos e condições"
               checked={form.values.terms}
               onChange={(event) =>
                 form.setFieldValue("terms", event.currentTarget.checked)
@@ -111,8 +109,8 @@ export function AuthenticationForm(props: PaperProps) {
             size="xs"
           >
             {type === "register"
-              ? "Already have an account? Login"
-              : "Don't have an account? Register"}
+              ? "Já possui conta? Entre"
+              : "Não possui conta? Cadastre-se"}
           </Anchor>
           <Button type="submit" radius="xl">
             {upperFirst(type)}

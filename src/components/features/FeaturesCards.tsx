@@ -2,13 +2,10 @@
 
 import { IconCookie, IconGauge, IconUser } from "@tabler/icons-react";
 import {
-  Badge,
   Card,
   Container,
-  Group,
   SimpleGrid,
   Text,
-  Title,
   useMantineTheme,
 } from "@mantine/core";
 import classes from "./FeaturesCards.module.css";
@@ -55,7 +52,7 @@ export function FeaturesCards() {
   ));
 
   return (
-    <Container size="lg" py="xl">
+    <Container size="lg" >
       <SimpleGrid cols={{ base: 1, md: 3 }} spacing="xl" mt={50}>
         {features}
       </SimpleGrid>

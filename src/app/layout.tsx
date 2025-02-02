@@ -15,16 +15,16 @@ export const metadata = {
 };
 
 const myColor: MantineColorsTuple = [
-  '#f3edff',
-  '#e2d8f8',
-  '#c1afec',
-  '#9e83e0',
-  '#815ed6',
-  '#6f46d0',
-  '#653ace',
-  '#552cb7',
-  '#4b27a4',
-  '#402091'
+  "#f3edff",
+  "#e2d8f8",
+  "#c1afec",
+  "#9e83e0",
+  "#815ed6",
+  "#6f46d0",
+  "#653ace",
+  "#552cb7",
+  "#4b27a4",
+  "#402091",
 ];
 
 const theme = createTheme({
@@ -36,9 +36,13 @@ const theme = createTheme({
   defaultRadius: "sm",
 });
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
-    <html lang="pt" >
+    <html lang="pt">
       <MantineProvider theme={theme}>
         <head>
           <ColorSchemeScript />

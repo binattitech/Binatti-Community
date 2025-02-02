@@ -37,7 +37,7 @@ export function UserInfoIcons({
             <ActionIcon size="auto" variant="transparent">
               <Linkedin size={16} strokeWidth={2} className={classes.icon} />
             </ActionIcon>
-            <ActionIcon size="auto" variant="transparent">
+            <ActionIcon size="auto" variant="transparent" >
               <Github size={16} strokeWidth={2} className={classes.icon} />
             </ActionIcon>
             <ActionIcon size="auto" variant="transparent">
