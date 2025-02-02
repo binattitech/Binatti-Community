@@ -42,13 +42,13 @@ export function FooterCentered() {
 
         <Group gap="xs" justify="flex-end" wrap="nowrap">
           <ActionIcon size="lg" variant="default" radius="xl">
-            <Linkedin size={18} strokeWidth={1.5} color="#552cb7" />
+            <Linkedin size={18} strokeWidth={2} color="#552cb7" />
           </ActionIcon>
           <ActionIcon size="lg" variant="default" radius="xl">
-            <Github size={18} strokeWidth={1.5} color="#552cb7" />
+            <Github size={18} strokeWidth={2} color="#552cb7" />
           </ActionIcon>
           <ActionIcon size="lg" variant="default" radius="xl">
-            <Instagram size={18} strokeWidth={1.5} color="#552cb7" />
+            <Instagram size={18} strokeWidth={2} color="#552cb7" />
           </ActionIcon>
         </Group>
       </div>

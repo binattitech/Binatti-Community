@@ -1,3 +1,4 @@
+import { FeaturesCards } from "@/components/features/FeaturesCards";
 import { FeaturesGrid } from "@/components/features/FeaturesGrid";
 import { FooterCentered } from "@/components/footer/FooterCentered";
 import { HeaderMegaMenu } from "@/components/header/HeaderMegaMenu";
@@ -20,10 +21,10 @@ export default function Sobre() {
           alt="Imagem da equipe"
         />
 
-        <Container size="lg">
-          <FeaturesGrid />
+        <Container size='lg'>
+          <FeaturesCards />
 
-          <SimpleGrid cols={{ base: 1, sm: 2, md: 4 }} spacing="lg">
+          <SimpleGrid cols={{ base: 1, sm: 2, lg: 4 }} spacing="xl" verticalSpacing="xl">
             <UserInfoIcons
               avatarUrl="/imagens/avatar/milena.jpg"
               role="UX Designer"
@@ -41,7 +42,7 @@ export default function Sobre() {
             <UserInfoIcons
               avatarUrl="/imagens/avatar/ana.jpg"
               role="UX Designer"
-              name="Ana Vitória Mendes"
+              name="Vitória Mendes"
               email="alice@example.com"
               phone="+55 (11) 98765-4321"
             />

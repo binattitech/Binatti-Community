@@ -1,8 +1,9 @@
 "use client";
 
 import { IconAt, IconPhoneCall } from "@tabler/icons-react";
-import { Avatar, Group, Text } from "@mantine/core";
+import { ActionIcon, Avatar, Group, Text } from "@mantine/core";
 import classes from "./UserInfoIcons.module.css";
+import { Github, Instagram, Link, Linkedin, Mail } from "lucide-react";
 
 interface UserInfoProps {
   avatarUrl?: string;
@@ -32,18 +33,19 @@ export function UserInfoIcons({
             {name}
           </Text>
 
-          <Group wrap="nowrap" gap={10} mt={3}>
-            <IconAt stroke={1.5} size={12} className={classes.icon} />
-            <Text size="xs" c="dimmed">
-              {email}
-            </Text>
-          </Group>
-
-          <Group wrap="nowrap" gap={10} mt={5}>
-            <IconPhoneCall stroke={1.5} size={12} className={classes.icon} />
-            <Text size="xs" c="dimmed">
-              {phone}
-            </Text>
+          <Group gap="sm" justify="flex-start" wrap="nowrap">
+            <ActionIcon size="auto" variant="transparent">
+              <Linkedin size={16} strokeWidth={2} className={classes.icon} />
+            </ActionIcon>
+            <ActionIcon size="auto" variant="transparent">
+              <Github size={16} strokeWidth={2} className={classes.icon} />
+            </ActionIcon>
+            <ActionIcon size="auto" variant="transparent">
+              <Instagram size={16} strokeWidth={2} className={classes.icon} />
+            </ActionIcon>
+            <ActionIcon size="auto" variant="transparent">
+              <Mail size={16} strokeWidth={2} className={classes.icon} />
+            </ActionIcon>
           </Group>
         </div>
       </Group>
