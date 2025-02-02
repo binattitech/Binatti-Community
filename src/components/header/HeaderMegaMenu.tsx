@@ -97,14 +97,14 @@ export function HeaderMegaMenu() {
               withinPortal
             >
               <HoverCard.Target>
-                <a href="#" className={classes.link}>
+                <Link href="/" className={classes.link}>
                   <Center inline>
                     <Box component="span" mr={5}>
                       Blog
                     </Box>
                     <IconChevronDown size={16} color={theme.colors.blue[6]} />
                   </Center>
-                </a>
+                </Link>
               </HoverCard.Target>
 
               <HoverCard.Dropdown style={{ overflow: "hidden" }}>
@@ -113,23 +113,24 @@ export function HeaderMegaMenu() {
                 </SimpleGrid>
               </HoverCard.Dropdown>
             </HoverCard>
-            <a href="#" className={classes.link}>
+            <Link href="/" className={classes.link}>
               Cursos
-            </a>
+            </Link>
             <Link href="/sobre" className={classes.link}>
               Sobre Nós
             </Link>
-
-            <a href="#" className={classes.link}>
+            <Link href="/" className={classes.link}>
               Seja uma Voluntária
-            </a>
+            </Link>
           </Group>
 
           <Group visibleFrom="sm">
             <Link href="/login">
               <Button variant="default">Log in</Button>
             </Link>
-            <Button>Sign up</Button>
+            <Link href="/">
+              <Button>Cadastro</Button>
+            </Link>
           </Group>
 
           <Burger
@@ -145,16 +146,16 @@ export function HeaderMegaMenu() {
         onClose={closeDrawer}
         size="100%"
         padding="md"
-        title="Navigation"
+        title="Menu"
         hiddenFrom="sm"
         zIndex={1000000}
       >
-        <ScrollArea h="calc(100vh - 80px" mx="-md">
+        <ScrollArea h="calc(100vh - 80px" mx="ms">
           <Divider my="sm" />
 
-          <a href="#" className={classes.link}>
+          <Link href="/" className={classes.link}>
             Home
-          </a>
+          </Link>
           <UnstyledButton className={classes.link} onClick={toggleLinks}>
             <Center inline>
               <Box component="span" mr={5}>
@@ -164,16 +165,17 @@ export function HeaderMegaMenu() {
             </Center>
           </UnstyledButton>
           <Collapse in={linksOpened}>{links}</Collapse>
-          <a href="#" className={classes.link}>
+
+          <Link href="/" className={classes.link}>
             Cursos
-          </a>
-          <a href="#" className={classes.link}>
+          </Link>
+          <Link href="/" className={classes.link}>
             Sobre Nós
-          </a>
+          </Link>
 
           <Divider my="sm" />
 
-          <Group justify="center" grow pb="xl" px="md">
+          <Group justify="center" grow pb="xl" >
             <Link href="/login">
               <Button variant="default">Log in</Button>
             </Link>

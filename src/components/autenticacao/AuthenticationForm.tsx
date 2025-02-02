@@ -36,7 +36,7 @@ export function AuthenticationForm(props: PaperProps) {
   });
 
   return (
-    <Paper radius="md" p="xl" withBorder {...props}>
+    <Paper radius="md" p="xl" withBorder {...props} >
       <Text size="lg" fw={500}>
         Bem vindo a Binatti Community, {type} com
       </Text>
