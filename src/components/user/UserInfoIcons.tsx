@@ -13,7 +13,7 @@ interface UserInfoProps {
 export function UserInfoIcons({
   avatarUrl = "https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/avatars/avatar-2.png",
   role = "Software Engineer",
-  name = "Robert Glassbreaker",
+  name = "Mimi",
 }: UserInfoProps) {
   return (
     <div className={classes.userCard}>
