@@ -1,5 +1,4 @@
-// Import styles of packages that you've installed.
-// All packages except `@mantine/hooks` require styles imports
+import { Libre_Baskerville, Lato } from "next/font/google";
 import "@mantine/core/styles.css";
 
 import {
@@ -13,6 +12,20 @@ export const metadata = {
   title: "Binatti Community",
   description: "A comunidade de tecnologia feita por mulheres",
 };
+
+const libreBaskerville = Libre_Baskerville({
+  subsets: ["latin"],
+  weight: ["400", "700"],
+  style: ["normal", "italic"],
+  variable: "--font-libre-baskerville",
+});
+
+const lato = Lato({
+  subsets: ["latin"],
+  weight: ["400", "700"],
+  style: ["normal", "italic"],
+  variable: "--font-lato",
+});
 
 const myColor: MantineColorsTuple = [
   "#f3edff",
@@ -32,7 +45,10 @@ const theme = createTheme({
     myColor,
   },
   primaryColor: "myColor",
-  fontFamily: "Poppins, sans-serif",
+  fontFamily: "var(--font-lato), sans-serif",
+  headings: {
+    fontFamily: "var(--font-libre-baskerville), serif",
+  },
   defaultRadius: "sm",
 });
 
@@ -42,15 +58,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="pt">
-      <MantineProvider theme={theme}>
-        <head>
-          <ColorSchemeScript />
-        </head>
-        <body>
+    <html lang="pt" className={`${libreBaskerville.variable} ${lato.variable}`}>
+      <head>
+        <ColorSchemeScript />
+      </head>
+      <body>
+        <MantineProvider theme={theme}>
           <main>{children}</main>
-        </body>
-      </MantineProvider>
+        </MantineProvider>
+      </body>
     </html>
   );
 }

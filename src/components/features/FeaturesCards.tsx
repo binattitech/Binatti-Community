@@ -2,31 +2,34 @@
 
 import { IconCookie, IconGauge, IconUser } from "@tabler/icons-react";
 import {
+  Badge,
   Card,
   Container,
+  Group,
   SimpleGrid,
   Text,
+  Title,
   useMantineTheme,
 } from "@mantine/core";
 import classes from "./FeaturesCards.module.css";
 
 const mockdata = [
   {
-    title: "Missão",
+    title: "Educação Acessível",
     description:
-      "This dust is actually a powerful poison that will even make a pro wrestler sick, Regice cloaks itself with frigid air of -328 degrees Fahrenheit",
+      "Criamos conteúdos educativos gratuitos sobre Inteligência Artificial, Cibersegurança e Experiência do Usuário (UX) para que qualquer pessoa possa aprender e se desenvolver na área.",
     icon: IconGauge,
   },
   {
-    title: "Visão",
+    title: "Mais Mulheres na Tecnologia",
     description:
-      "People say it can run at the same speed as lightning striking, Its icy body is so cold, it will not melt even if it is immersed in magma",
+      "Construímos um espaço onde mulheres podem se apoiar, compartilhar conhecimento e contribuir voluntariamente, incentivando a representatividade e diversidade no setor.",
     icon: IconUser,
   },
   {
-    title: "Valores",
+    title: "Oportunidades de Crescimento",
     description:
-      "They’re popular, but they’re rare. Trainers who show them off recklessly may be targeted by thieves",
+      "Através do nosso blog, fórum e mini cursos com certificado, buscamos capacitar e conectar pessoas interessadas no mundo da tecnologia.",
     icon: IconCookie,
   },
 ];
@@ -42,7 +45,7 @@ export function FeaturesCards() {
       padding="xl"
     >
       <feature.icon size={32} stroke={2} color={theme.colors.blue[6]} />
-      <Text fz="lg" fw={500} className={classes.cardTitle} mt="sm">
+      <Text fz="lg" fw={500} className={classes.cardTitle} mt="md">
         {feature.title}
       </Text>
       <Text fz="sm" c="dimmed" mt="sm">
@@ -52,7 +55,22 @@ export function FeaturesCards() {
   ));
 
   return (
-    <Container size="lg" >
+    <Container size="lg" py="xl">
+      <Group justify="center">
+        <Badge variant="filled" size="lg">
+          Best company ever
+        </Badge>
+      </Group>
+
+      <Title order={2} className={classes.title} ta="center" mt="sm">
+        Integrate effortlessly with any technology stack
+      </Title>
+
+      <Text c="dimmed" className={classes.description} ta="center" mt="md">
+        Every once in a while, you’ll see a Golbat that’s missing some fangs.
+        This happens when hunger drives it to try biting a Steel-type Pokémon.
+      </Text>
+
       <SimpleGrid cols={{ base: 1, md: 3 }} spacing="xl" mt={50}>
         {features}
       </SimpleGrid>

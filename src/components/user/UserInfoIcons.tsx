@@ -1,6 +1,5 @@
 "use client";
 
-import { IconAt, IconPhoneCall } from "@tabler/icons-react";
 import { ActionIcon, Avatar, Group, Text } from "@mantine/core";
 import classes from "./UserInfoIcons.module.css";
 import { Github, Instagram, Link, Linkedin, Mail } from "lucide-react";
