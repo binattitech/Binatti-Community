@@ -2,15 +2,11 @@
 
 import {
   IconBook,
-  IconChartPie3,
   IconChevronDown,
   IconCode,
   IconCoin,
-  IconFingerprint,
-  IconNotification,
 } from "@tabler/icons-react";
 import {
-  Anchor,
   Box,
   Burger,
   Button,
@@ -75,8 +71,8 @@ export function HeaderMegaMenu() {
   ));
 
   return (
-    <Box pb={120}>
-      <header className={classes.header}>
+    <Box>
+      <header className={classes.header} >
         <Group justify="space-between" h="100%">
           <Image
             src="/logos/logoroxa.svg"

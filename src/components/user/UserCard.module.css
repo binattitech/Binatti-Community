@@ -8,13 +8,13 @@
 }
 
 .description {
-    max-width: 1200px;
+    max-width: 600px;
     margin: auto;
 
     &::after {
         content: '';
         display: block;
-        background-color: #562DB9;
+        background-color: var(--mantine-color-blue-filled);
         width: 45px;
         height: 2px;
         margin-top: var(--mantine-spacing-sm);
@@ -31,7 +31,7 @@
     &::after {
         content: '';
         display: block;
-        background-color: #562DB9;
+        background-color: var(--mantine-color-blue-filled);
         width: 45px;
         height: 2px;
         margin-top: var(--mantine-spacing-sm);

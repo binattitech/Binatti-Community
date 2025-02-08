@@ -1,4 +1,4 @@
-'use client';
+"use client";
 
 import { IconCookie, IconGauge, IconUser } from "@tabler/icons-react";
 import {
@@ -11,7 +11,7 @@ import {
   Title,
   useMantineTheme,
 } from "@mantine/core";
-import classes from "./FeaturesCards.module.css";
+import classes from "./UserCard.module.css";
 
 const mockdata = [
   {
@@ -34,7 +34,7 @@ const mockdata = [
   },
 ];
 
-export function FeaturesCards() {
+export function UserCard() {
   const theme = useMantineTheme();
   const features = mockdata.map((feature) => (
     <Card
@@ -56,17 +56,12 @@ export function FeaturesCards() {
 
   return (
     <Container size="xl" py="xl">
-      <Group justify="center">
-        <Badge variant="filled" size="lg">
-          Best company ever
-        </Badge>
-      </Group>
 
       <Title order={2} className={classes.title} ta="center" mt="sm">
-        O que é a Binatti Community?
+        Equipe
       </Title>
 
-      <Text c="dimmed" className={classes.description}  ta="center" mt="md" >
+      <Text c="dimmed" className={classes.description} ta="center" mt="md">
         Tudo começou com a iniciativa das meninas do curso de Engenharia de
         Software do iCEV, que, com o apoio da coordenação da faculdade,
         decidiram se unir para se apoiar e crescer juntas na área de tecnologia.
@@ -85,7 +80,7 @@ export function FeaturesCards() {
         certificado, para quem deseja aprender e se especializar.
       </Text>
 
-      <SimpleGrid cols={{ base: 1, md: 3 }} spacing="md" mt={50} >
+      <SimpleGrid cols={{ base: 1, md: 3 }} spacing="md" mt={50}>
         {features}
       </SimpleGrid>
     </Container>
