@@ -117,7 +117,7 @@ export function HeaderMegaMenu() {
             <Link href="/sobre" className={classes.link}>
               Sobre Nós
             </Link>
-            <Link href="/" className={classes.link}>
+            <Link href="/voluntaria" className={classes.link}>
               Seja uma Voluntária
             </Link>
           </Group>
@@ -169,6 +169,9 @@ export function HeaderMegaMenu() {
           </Link>
           <Link href="/sobre" className={classes.link}>
             Sobre Nós
+          </Link>
+          <Link href="/voluntaria" className={classes.link}>
+            Seja uma Voluntária
           </Link>
 
           <Divider my="sm" />

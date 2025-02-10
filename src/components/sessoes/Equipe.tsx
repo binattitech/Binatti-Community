@@ -77,6 +77,7 @@ export function Equipe() {
             name: "Laysa Cabedo",
           },
           { avatarUrl: "", role: "UX Designer", name: "Maria Clara" },
+          { avatarUrl: "", role: "UX Designer", name: "Sara Ocy" },
         ].map((user) => (
           <UserInfoIcons
             key={user.name}
