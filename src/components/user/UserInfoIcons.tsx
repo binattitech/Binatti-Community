@@ -1,8 +1,8 @@
 "use client";
 
-import { ActionIcon, Avatar, Group, Text } from "@mantine/core";
+import { ActionIcon, Avatar, Card, Group, Text } from "@mantine/core";
 import classes from "./UserInfoIcons.module.css";
-import { Github, Instagram, Link, Linkedin, Mail } from "lucide-react";
+import { Github, Instagram, Linkedin, Mail } from "lucide-react";
 
 interface UserInfoProps {
   avatarUrl?: string;
@@ -16,34 +16,35 @@ export function UserInfoIcons({
   name = "Mimi",
 }: UserInfoProps) {
   return (
-    <div className={classes.userCard}>
-      <Group wrap="nowrap">
+    <Card  radius="md" className={classes.card} padding="xl">
+      <div className={classes.userCard}>
         <Avatar src={avatarUrl} size={94} radius="md" />
-        <div>
-          <Text size="xs" tt="uppercase" fw={700} c="dimmed" mb="sm">
+
+        <div className={classes.userInfo}>
+          <Text size="xs" tt="uppercase" fw={700} c="dimmed" mb={4}>
             {role}
           </Text>
 
-          <Text size="md" fw={500} className={classes.name} mb="md">
+          <Text size="md" fw={500} className={classes.name} mb={4}>
             {name}
           </Text>
 
-          <Group gap="lg" justify="flex-start" wrap="nowrap">
-            <ActionIcon size="auto" variant="transparent">
-              <Linkedin size={16} strokeWidth={2} className={classes.icon} />
+          <Group gap="sm" justify="flex-start" wrap="nowrap" mt={2}>
+            <ActionIcon size="lg" variant="transparent">
+              <Linkedin size={18} strokeWidth={2} className={classes.icon} />
             </ActionIcon>
-            <ActionIcon size="auto" variant="transparent">
-              <Github size={16} strokeWidth={2} className={classes.icon} />
+            <ActionIcon size="lg" variant="transparent">
+              <Github size={18} strokeWidth={2} className={classes.icon} />
             </ActionIcon>
-            <ActionIcon size="auto" variant="transparent">
-              <Instagram size={16} strokeWidth={2} className={classes.icon} />
+            <ActionIcon size="lg" variant="transparent">
+              <Instagram size={18} strokeWidth={2} className={classes.icon} />
             </ActionIcon>
-            <ActionIcon size="auto" variant="transparent">
-              <Mail size={16} strokeWidth={2} className={classes.icon} />
+            <ActionIcon size="lg" variant="transparent">
+              <Mail size={18} strokeWidth={2} className={classes.icon} />
             </ActionIcon>
           </Group>
         </div>
-      </Group>
-    </div>
+      </div>
+    </Card>
   );
 }

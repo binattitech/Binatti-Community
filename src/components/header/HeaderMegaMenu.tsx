@@ -125,7 +125,7 @@ export function HeaderMegaMenu() {
               <Button variant="default">Log in</Button>
             </Link>
             <Link href="/">
-              <Button>Cadastro</Button>
+              <Button>Cadastre</Button>
             </Link>
           </Group>
 
@@ -165,13 +165,13 @@ export function HeaderMegaMenu() {
           <Link href="/" className={classes.link}>
             Cursos
           </Link>
-          <Link href="/" className={classes.link}>
+          <Link href="/sobre" className={classes.link}>
             Sobre Nós
           </Link>
 
           <Divider my="sm" />
 
-          <Group justify="center" grow pb="xl" >
+          <Group justify="center" pb="xl" >
             <Link href="/login">
               <Button variant="default">Log in</Button>
             </Link>
