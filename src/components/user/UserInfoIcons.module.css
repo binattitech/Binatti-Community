@@ -24,4 +24,21 @@
 
 .icon {
   color: light-dark(var(--mantine-color-gray-5), var(--mantine-color-dark-3));
+  width: 18px;
+  height: 18px;
+}
+
+.iconGroup {
+  gap: 8px;
+}
+
+@media (max-width: 768px) {
+  .icon {
+    width: 14px;
+    height: 14px;
+  }
+
+  .iconGroup {
+    gap: 4px;
+  }
 }

@@ -16,7 +16,7 @@ export function UserInfoIcons({
   name = "Mimi",
 }: UserInfoProps) {
   return (
-    <Card  radius="md" className={classes.card} padding="xl">
+    <Card radius="md" className={classes.card} padding="xl">
       <div className={classes.userCard}>
         <Avatar src={avatarUrl} size={94} radius="md" />
 
@@ -29,7 +29,12 @@ export function UserInfoIcons({
             {name}
           </Text>
 
-          <Group gap="sm" justify="flex-start" wrap="nowrap" mt={2}>
+          <Group
+            className={classes.iconGroup}
+            justify="flex-start"
+            wrap="nowrap"
+            mt={2}
+          >
             <ActionIcon size="lg" variant="transparent">
               <Linkedin size={18} strokeWidth={2} className={classes.icon} />
             </ActionIcon>

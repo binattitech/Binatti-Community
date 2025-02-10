@@ -11,6 +11,9 @@ import {
 export const metadata = {
   title: "Binatti Community",
   description: "A comunidade de tecnologia feita por mulheres",
+  icons: {
+    icon: '/logos/favicon.svg',
+  }
 };
 
 const libreBaskerville = Libre_Baskerville({
