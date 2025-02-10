@@ -2,7 +2,6 @@
 
 import { Container, SimpleGrid } from "@mantine/core";
 import { Titles } from "../title/Title";
-import { UserInfoIcons } from "../user/UserInfoIcons";
 import { ArticleCard } from "../articleCards/ArticleCard";
 
 export function Blog() {
