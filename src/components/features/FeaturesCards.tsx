@@ -52,10 +52,9 @@ export function FeaturesCards() {
         . Acreditamos que o acesso à informação e o aprendizado colaborativo são
         essenciais para transformar o mercado de tecnologia. Nosso site oferece
         conteúdos educativos por meio de um <strong>blog</strong> com artigos
-        informativos, um <strong>fórum aberto</strong>
-        para dúvidas e discussões e uma área de{" "}
-        <strong>mini cursos gratuitos com certificado</strong>, para quem deseja
-        aprender e se especializar.
+        informativos, um <strong>fórum aberto</strong> para dúvidas e discussões
+        e uma área de <strong>mini cursos gratuitos com certificado</strong>,
+        para quem deseja aprender e se especializar.
       </Text>
 
       <SimpleGrid cols={{ base: 1, md: 3 }} spacing="md" mt={50}>
