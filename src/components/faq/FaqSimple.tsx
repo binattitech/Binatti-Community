@@ -1,4 +1,4 @@
-'use client';
+"use client";
 
 import { Accordion, Container, Title } from "@mantine/core";
 import classes from "./FaqSimple.module.css";
@@ -8,41 +8,53 @@ const placeholder =
 
 export function FaqSimple() {
   return (
-    <Container size="lg" className={classes.wrapper}>
+    <Container className={classes.wrapper}>
       <Title ta="center" className={classes.title}>
         Dúvidas Frequentes
       </Title>
 
-      <Accordion variant="separated">
-        <Accordion.Item className={classes.item} value="reset-password">
+      <Accordion
+        variant="separated"
+        transitionDuration={200}
+        chevronPosition="right"
+      >
+        <Accordion.Item
+          className={classes.item}
+          value="reset-password"
+          w="100%"
+        >
           <Accordion.Control>How can I reset my password?</Accordion.Control>
           <Accordion.Panel>{placeholder}</Accordion.Panel>
         </Accordion.Item>
 
-        <Accordion.Item className={classes.item} value="another-account">
+        <Accordion.Item
+          className={classes.item}
+          value="another-account"
+          w="100%"
+        >
           <Accordion.Control>
-            Can I create more that one account?
+            Can I create more than one account?
           </Accordion.Control>
           <Accordion.Panel>{placeholder}</Accordion.Panel>
         </Accordion.Item>
 
-        <Accordion.Item className={classes.item} value="newsletter">
+        <Accordion.Item className={classes.item} value="newsletter" w="100%">
           <Accordion.Control>
-            How can I subscribe to monthly newsletter?
+            How can I subscribe to the monthly newsletter?
           </Accordion.Control>
           <Accordion.Panel>{placeholder}</Accordion.Panel>
         </Accordion.Item>
 
-        <Accordion.Item className={classes.item} value="credit-card">
+        <Accordion.Item className={classes.item} value="credit-card" w="100%">
           <Accordion.Control>
             Do you store credit card information securely?
           </Accordion.Control>
           <Accordion.Panel>{placeholder}</Accordion.Panel>
         </Accordion.Item>
 
-        <Accordion.Item className={classes.item} value="payment">
+        <Accordion.Item className={classes.item} value="payment" w="100%">
           <Accordion.Control>
-            What payment systems to you work with?
+            What payment systems do you work with?
           </Accordion.Control>
           <Accordion.Panel>{placeholder}</Accordion.Panel>
         </Accordion.Item>

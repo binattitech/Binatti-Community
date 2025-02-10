@@ -1,15 +1,38 @@
 .wrapper {
-    padding-top: calc(var(--mantine-spacing-xl) * 2);
+    
     padding-bottom: calc(var(--mantine-spacing-xl) * 2);
-    min-height: 650px;
+    width: 100%;
 }
 
 .title {
     margin-bottom: calc(var(--mantine-spacing-xl) * 1.5);
 }
 
+.title::after {
+    content: '';
+    display: block;
+    background-color: #562DB9;
+    width: 45px;
+    height: 2px;
+    margin-top: var(--mantine-spacing-sm);
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .item {
+    width: 100%;
+    /* Garante que o item sempre tenha a mesma largura */
     border-radius: var(--mantine-radius-md);
     margin-bottom: var(--mantine-spacing-lg);
     border: 1px solid light-dark(var(--mantine-color-gray-3), var(--mantine-color-dark-4));
+}
+
+.mantine-Accordion-item {
+    width: 100%;
+    /* Garante que o container do item mantenha o tamanho */
+}
+
+.mantine-Accordion-panel {
+    width: 100%;
+    /* Mantém o painel com largura fixa */
 }

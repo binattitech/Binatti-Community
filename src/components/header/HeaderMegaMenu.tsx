@@ -72,14 +72,16 @@ export function HeaderMegaMenu() {
 
   return (
     <Box>
-      <header className={classes.header} >
+      <header className={classes.header}>
         <Group justify="space-between" h="100%">
-          <Image
-            src="/logos/logoroxa.svg"
-            alt="Binatti Logo"
-            width={120}
-            height={28.5}
-          />
+          <Link href="/">
+            <Image
+              src="/logos/logoroxa.svg"
+              alt="Binatti Logo"
+              width={120}
+              height={28.5}
+            />
+          </Link>
 
           <Group h="100%" gap={0} visibleFrom="sm">
             <Link href="/" className={classes.link}>
@@ -171,7 +173,7 @@ export function HeaderMegaMenu() {
 
           <Divider my="sm" />
 
-          <Group justify="center" pb="xl" >
+          <Group justify="center" pb="xl">
             <Link href="/login">
               <Button variant="default">Log in</Button>
             </Link>
