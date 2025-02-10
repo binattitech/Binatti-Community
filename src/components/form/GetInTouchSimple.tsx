@@ -53,8 +53,6 @@ export function GetInTouchSimple() {
           Preencha o formulário abaixo para se juntar à nossa comunidade!
         </Text>
 
-        <Divider my="xl" />
-
         <Title order={3} className={classes.subtitle} ta="left" mt="xl">
           Informações Pessoais
         </Title>
@@ -228,8 +226,6 @@ export function GetInTouchSimple() {
             <Radio value="nao" label="Não" />
           </Stack>
         </Radio.Group>
-
-        <Divider my="xl" />
 
         <Group justify="center" mt="xl">
           <Button type="submit" size="md">
