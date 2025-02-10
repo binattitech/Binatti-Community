@@ -9,11 +9,11 @@ export function ImageActionBanner() {
       <Overlay className={classes.overlay} opacity={0.55} zIndex={0} />
 
       <div className={classes.content}>
-        <Text size="lg" fw={700} className={classes.title}>
+        <Text size="xl" fw={700} className={classes.title}>
           Seja Voluntária e Faça a Diferença!
         </Text>
 
-        <Text size="sm" className={classes.description}>
+        <Text size="md" className={classes.description}>
           Você acredita no poder do conhecimento e quer ajudar a tornar a
           tecnologia mais acessível?
         </Text>
@@ -22,7 +22,7 @@ export function ImageActionBanner() {
           className={classes.action}
           variant="white"
           color="dark"
-          size="xs"
+          size="md"
         >
           Inscreva-se
         </Button>
