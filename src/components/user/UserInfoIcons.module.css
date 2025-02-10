@@ -4,7 +4,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  border: 1px solid light-dark(var(--mantine-color-gray-1), var(--mantine-color-dark-5));
+  border: 1.5px solid light-dark(var(--mantine-color-gray-1), var(--mantine-color-dark-5));
 }
 
 .userCard {
