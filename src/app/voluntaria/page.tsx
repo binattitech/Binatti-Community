@@ -1,6 +1,7 @@
 import { FooterCentered } from "@/components/footer/FooterCentered";
 import { GetInTouchSimple } from "@/components/form/GetInTouchSimple";
 import { HeaderMegaMenu } from "@/components/header/HeaderMegaMenu";
+import { CStep } from "@/components/stepper/CStep";
 
 
 export default function Voluntaria() {
@@ -17,6 +18,7 @@ export default function Voluntaria() {
       </main>
 
       <footer style={{ marginTop: "auto" }}>
+        <CStep />
         <FooterCentered />
       </footer>
     </div>
