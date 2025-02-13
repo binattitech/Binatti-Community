@@ -11,13 +11,19 @@ export function CStep() {
   return (
     <>
       <Stepper active={active} onStepClick={setActive}>
-        <Stepper.Step label="First step" description="Create an account">
-          Step 1 content: Create an account
+        <Stepper.Step label="Informações Pessoais" description="Quem é você?">
+          Step 1 content: 
         </Stepper.Step>
-        <Stepper.Step label="Second step" description="Verify email">
+        <Stepper.Step label="Sobre Você" description="Conte-nos sobre você.">
           Step 2 content: Verify email
         </Stepper.Step>
-        <Stepper.Step label="Final step" description="Get full access">
+        <Stepper.Step label="Disponibilidade" description="Get full access">
+          Step 3 content: Get full access
+        </Stepper.Step>
+        <Stepper.Step label="Contribuição" description="Get full access">
+          Step 3 content: Get full access
+        </Stepper.Step>
+        <Stepper.Step label="Declaração" description="Get full access">
           Step 3 content: Get full access
         </Stepper.Step>
         <Stepper.Completed>
