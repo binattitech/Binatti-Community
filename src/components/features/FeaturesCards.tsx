@@ -33,7 +33,7 @@ export function FeaturesCards() {
         O que é a Binatti Community?
       </Title>
 
-      <Text c="dimmed" className={classes.description} ta="center" mt="md">
+      <Text c="dimmed" className={classes.description} ta="left" mt="md">
         Tudo começou com a iniciativa das meninas do curso de{" "}
         <strong>Engenharia de Software do iCEV</strong>, que, com o apoio da
         coordenação da faculdade, decidiram se unir para se apoiar e crescer

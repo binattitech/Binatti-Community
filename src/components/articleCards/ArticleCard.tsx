@@ -39,7 +39,7 @@ export function ArticleCard() {
       </Badge>
 
       <Text className={classes.title} fw={500} component="a" {...linkProps}>
-        Resident Evil Village review
+        Cibersegurança: o básico que você deve saber
       </Text>
 
       <Text fz="sm" c="dimmed" lineClamp={4}>

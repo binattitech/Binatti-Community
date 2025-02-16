@@ -34,7 +34,7 @@ export function Equipe() {
           {
             avatarUrl: "/imagens/avatar/aline.jpg",
             role: "UX Designer",
-            name: "Aline",
+            name: "Aline Ramos",
           },
           {
             avatarUrl: "/imagens/avatar/ingrid.jpg",
@@ -64,7 +64,7 @@ export function Equipe() {
           {
             avatarUrl: "/imagens/avatar/marina.jpg",
             role: "UX Designer",
-            name: "Marina",
+            name: "Marina de Lima",
           },
           {
             avatarUrl: "/imagens/avatar/bruna.jpg",
@@ -77,7 +77,7 @@ export function Equipe() {
             name: "Laysa Cabedo",
           },
           { avatarUrl: "", role: "UX Designer", name: "Maria Clara" },
-          { avatarUrl: "", role: "UX Designer", name: "Sara Ocy" },
+          { avatarUrl: "", role: "UX Designer", name: "Sarah Ocy" },
         ].map((user) => (
           <UserInfoIcons
             key={user.name}

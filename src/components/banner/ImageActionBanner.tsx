@@ -2,6 +2,7 @@
 
 import { Button, Card, Overlay, Text } from "@mantine/core";
 import classes from "./ImageActionBanner.module.css";
+import Link from "next/link";
 
 export function ImageActionBanner() {
   return (
@@ -18,14 +19,18 @@ export function ImageActionBanner() {
           tecnologia mais acessível?
         </Text>
 
-        <Button
-          className={classes.action}
-          variant="white"
-          color="dark"
-          size="md"
-        >
-          Inscreva-se
-        </Button>
+        <Link href='/voluntaria'>
+          <Button
+            className={classes.action}
+            variant="white"
+            color="dark"
+            size="md"
+          >
+            Inscreva-se
+          </Button>
+        </Link>
+
+        
       </div>
     </Card>
   );
