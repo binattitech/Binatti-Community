@@ -95,7 +95,7 @@ export function HeaderMegaMenu() {
               withinPortal
             >
               <HoverCard.Target>
-                <Link href="/" className={classes.link}>
+                <Link href="/blog" className={classes.link}>
                   <Center inline>
                     <Box component="span" mr={5}>
                       Blog
@@ -111,7 +111,7 @@ export function HeaderMegaMenu() {
                 </SimpleGrid>
               </HoverCard.Dropdown>
             </HoverCard>
-            <Link href="/" className={classes.link}>
+            <Link href="/cursos" className={classes.link}>
               Cursos
             </Link>
             <Link href="/sobre" className={classes.link}>
