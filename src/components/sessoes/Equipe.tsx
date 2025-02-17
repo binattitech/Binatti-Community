@@ -62,11 +62,6 @@ export function Equipe() {
             name: "Beatriz Barreto",
           },
           {
-            avatarUrl: "/imagens/avatar/marina.jpg",
-            role: "UX Designer",
-            name: "Marina de Lima",
-          },
-          {
             avatarUrl: "/imagens/avatar/bruna.jpg",
             role: "UX Designer",
             name: "Bruna Rocha",

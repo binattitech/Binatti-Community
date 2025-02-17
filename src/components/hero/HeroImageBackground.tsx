@@ -11,27 +11,21 @@ export function HeroImageBackground() {
 
       <div className={classes.inner}>
         <Title className={classes.title}>
-          Milena ainda não pensou no{" "}
+        Tecnologia por Elas, para {" "}
           <Text component="span" inherit className={classes.highlight}>
-            conteúdo
+          Todos
           </Text>
         </Title>
 
         <Container size={640}>
           <Text size="lg" className={classes.description}>
-            muito texto pra uma pessoa sem criatividade, gpt pf me ajude
+          Uma comunidade de meninas voluntárias explorando IA, Cibersegurança e UX. Aprenda, compartilhe e cresça conosco!
           </Text>
         </Container>
 
         <div className={classes.controls}>
           <Button className={classes.control} variant="white" size="lg">
-            me aperte
-          </Button>
-          <Button
-            className={cx(classes.control, classes.secondaryControl)}
-            size="lg"
-          >
-            me aperte
+          Junte-se a nós
           </Button>
         </div>
       </div>

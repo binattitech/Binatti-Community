@@ -68,7 +68,7 @@ export function FeaturesTitle() {
       <Grid gutter={80}>
         <Grid.Col span={{ base: 12, md: 5 }}>
           <Title className={classes.title} order={2}>
-            Seja Voluntária e Faça a Diferença!
+            Sobre Nós
           </Title>
           <Text c="dimmed">
             Você acredita no poder do conhecimento e quer ajudar a tornar a
