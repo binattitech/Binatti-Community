@@ -60,7 +60,7 @@ export function ForWho() {
       <SimpleGrid cols={{ base: 1, sm: 3 }} spacing="xl" mt="xl">
         {learningPaths.map((item) => (
           <Paper key={item.title} shadow="md" p="md" radius="md" className={classes.card}>
-            <ThemeIcon size={50} radius="md" variant="light" color="blue">
+            <ThemeIcon size={50} radius="md" variant="light" color="#552cb7">
               {item.icon}
             </ThemeIcon>
             <Text fw={600} size="lg" mt="md">
@@ -72,34 +72,7 @@ export function ForWho() {
           </Paper>
         ))}
       </SimpleGrid>
-
-      <Grid mt="xl" align="center">
-        <Grid.Col span={{ base: 12, md: 6 }}>
-          <Title order={3} className={classes.subtitle}>
-            Também é para quem:
-          </Title>
-          <Box mt="md">
-            {forWhoItems.map((item, index) => (
-              <Group key={index} gap="sm" mt="xs">
-                <ThemeIcon size={30} radius="xl" color="blue">
-                  {item.icon}
-                </ThemeIcon>
-                <Text size="md">{item.text}</Text>
-              </Group>
-            ))}
-          </Box>
-        </Grid.Col>
-        <Grid.Col span={{ base: 12, md: 6 }}>
-          <Image
-            src="/images/learning-paths.png"
-            alt="Ilustração aprendizado"
-            width={500}
-            height={350}
-            className={classes.image}
-            priority
-          />
-        </Grid.Col>
-      </Grid>
+      
     </Container>
     
     </>
