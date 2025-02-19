@@ -27,6 +27,11 @@
 
 .card {
     border: 1px solid light-dark(var(--mantine-color-gray-1), var(--mantine-color-dark-5));
+    transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-5px);
 }
 
 .cardTitle {

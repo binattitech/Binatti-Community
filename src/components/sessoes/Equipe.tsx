@@ -37,11 +37,6 @@ export function Equipe() {
             name: "Aline Ramos",
           },
           {
-            avatarUrl: "/imagens/avatar/ingrid.jpg",
-            role: "UX Designer",
-            name: "Ingrid Ribeiro",
-          },
-          {
             avatarUrl: "/imagens/avatar/kevilla.jpg",
             role: "UX Designer",
             name: "Kévilla Aguiar",
