@@ -1,6 +1,6 @@
 'use client';
 
-import { Instagram, Github, Linkedin } from 'lucide-react';
+import { Instagram, Github, Linkedin, Youtube } from 'lucide-react';
 
 import { ActionIcon, Anchor, Group } from "@mantine/core";
 import classes from "./FooterCentered.module.css";
@@ -49,6 +49,9 @@ export function FooterCentered() {
           </ActionIcon>
           <ActionIcon size="lg" variant="default" radius="xl">
             <Instagram size={18} strokeWidth={2} color="#552cb7" />
+          </ActionIcon>
+          <ActionIcon size="lg" variant="default" radius="xl">
+            <Youtube size={18} strokeWidth={2} color="#552cb7" />
           </ActionIcon>
         </Group>
       </div>

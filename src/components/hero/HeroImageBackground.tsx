@@ -1,6 +1,5 @@
 'use client';
 
-import cx from "clsx";
 import { Button, Container, Overlay, Text, Title } from "@mantine/core";
 import classes from "./HeroImageBackground.module.css";
 

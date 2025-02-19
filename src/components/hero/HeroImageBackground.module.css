@@ -2,7 +2,7 @@
     position: relative;
     padding-top: 180px;
     padding-bottom: 130px;
-    background-image: url('/imagens/_DSC5582.jpg');
+    background-image: url('/imagens/equipe_escada.jpg');
     background-size: cover;
     background-position: center;
 
@@ -27,7 +27,7 @@
     margin-bottom: var(--mantine-spacing-xs);
     text-align: center;
     font-family:
-        Greycliff CF,
+    Libre Baskerville,
         var(--mantine-font-family);
 
     @media (max-width: 36em) {

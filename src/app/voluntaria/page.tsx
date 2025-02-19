@@ -14,7 +14,6 @@ export default function Voluntaria() {
       </header>
 
       <main style={{ flex: 1, display: "flex", flexDirection: "column" }}>
-        <CStep />
         <GetInTouchSimple />
       </main>
 
